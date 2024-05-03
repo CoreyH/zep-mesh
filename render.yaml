@@ -6,6 +6,7 @@ services:
     image:
       url: ghcr.io/getzep/zep-cloud:latest
     healthCheckPath: /healthz
+    region: fra
     envVars:
       # Disable web UI. WARNING: Do not enable this unless
       # you are running Zep on a private network.
