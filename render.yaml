@@ -29,6 +29,7 @@ services:
     name: zep-nlp
     autoDeploy: false
     env: image
+    region: frankfurt
     image:
       url: ghcr.io/getzep/zep-nlp-server:latest
 
@@ -36,4 +37,5 @@ databases:
   - name: zep-postgres
     databaseName: zep
     postgresMajorVersion: 15
+    region: frankfurt
     ipAllowList: [] # only allow internal connections
